@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body * {
+  outline: 1px solid pink;
+} */
+
+.main-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  background: rgba(245, 245, 245);
+  box-shadow: 5px 10px 8px #888888;
+  margin-right: 20px;
+}
+
+.image-container {
+  width: 100px;
+  height: auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+#main-image {
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 1170px;
+  min-width: 300px;
+}
+
+#main-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Image fade-in effect */
+
+.fade-in {
+  animation: fadeIn ease 0.65s;
+  -webkit-animation: fadeIn ease 0.65s;
+  -moz-animation: fadeIn ease 0.65s;
+  -o-animation: fadeIn ease 0.65s;
+  -ms-animation: fadeIn ease 0.65s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
